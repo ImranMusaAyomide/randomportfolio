@@ -1,0 +1,88 @@
+.header {
+  background: #ffffff;
+  padding: 1.25rem 2rem;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header__logo-img {
+  height: 28px;
+  width: auto;
+}
+
+.header__nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  list-style: none;
+  background: #edeae3;
+  border-radius: 9999px;
+  padding: 0.5rem 0.75rem;
+}
+
+.header__nav-link {
+  color: #5d5d5d;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+  transition: color 0.2s ease;
+}
+
+.header__nav-link:hover {
+  color: #9c5779;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header__login {
+  color: #5d5d5d;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.header__login:hover {
+  color: #9c5779;
+}
+
+.header__cta {
+  background: #9c5779;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 0.625rem 1.5rem;
+  border-radius: 9999px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.header__cta:hover {
+  background: #854663;
+}

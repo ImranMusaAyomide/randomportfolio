@@ -1,0 +1,146 @@
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero__header {
+  margin-bottom: 2rem;
+}
+
+.hero__title {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.0625rem;
+  color: #1a1a1a;
+  max-width: 42ch;
+}
+
+.hero__content-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 2px solid #9c5779;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+}
+
+.hero__left {
+  display: flex;
+  align-items: stretch;
+}
+
+.hero__portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__panel {
+  padding: 1.25rem 1.5rem;
+}
+
+.hero__panel--top {
+  background: #e0f0f8;
+}
+
+.hero__panel-text {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.9375rem;
+  color: #1a1a1a;
+  margin-bottom: 0.35rem;
+}
+
+.hero__panel-text:last-of-type {
+  margin-bottom: 0;
+}
+
+.hero__panel--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.hero__grid-item {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  min-height: 80px;
+}
+
+.hero__grid-item--1 {
+  background: linear-gradient(135deg, #2d2a3a 0%, #4a4563 50%, #8b7355 100%);
+}
+
+.hero__grid-item--2 {
+  background: linear-gradient(135deg, #7b68ee 0%, #e07b8a 50%, #4da6ff 100%);
+}
+
+.hero__grid-item--3 {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+.hero__grid-item--4 {
+  background: linear-gradient(135deg, #f8f4ed 0%, #e8e4e0 50%, #d4d0cc 100%);
+}
+
+.hero__panel--bottom {
+  background: #ffffff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__panel-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  max-height: 200px;
+}
+
+.hero__cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.625rem 1.5rem;
+  background: #8b2d4f;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 9999px;
+  transition: background 0.2s ease;
+  align-self: flex-start;
+}
+
+.hero__cta:hover {
+  background: #7a2745;
+}
+
+@media (max-width: 768px) {
+  .hero__content-block {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__portrait {
+    border-radius: 0;
+  }
+}
