@@ -3,6 +3,7 @@ import Header from './components/Header'
 import HeroSection from './components/HeroSection'
 import FeatureSection from './components/FeatureSection'
 import ImgGallary from './components/ImgGallary'
+import Launch from './components/Launch'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <HeroSection />
       <FeatureSection />
       <ImgGallary />
+      <Launch />
     </>
   )
 }
