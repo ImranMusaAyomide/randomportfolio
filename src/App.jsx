@@ -6,6 +6,7 @@ import FeatureSection from './components/FeatureSection';
 import ImgGallary from './components/ImgGallary';
 import Launch from './components/Launch';
 import LatestCreationPage from './components/LatestCreationPage';
+import Resources from './components/Resources';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           }
         />
         <Route path="/latest" element={<LatestCreationPage />} />
+        <Route path="/resources" element={<Resources />} />
       </Routes>
     </Router>
   );
