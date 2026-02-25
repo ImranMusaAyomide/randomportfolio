@@ -6,7 +6,7 @@ function Header() {
   const navLinks = [
     { label: 'Features', href: '#features' },
     { label: 'Pricing', href: '#pricing' },
-    { label: 'Resources', href: '#resources' },
+    { label: 'Resources', href: '/resources' },
     { label: 'Latest Creation', href: '/latest' },
   ];
 
